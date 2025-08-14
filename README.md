@@ -1,36 +1,36 @@
-[README.md](https://github.com/user-attachments/files/21774198/README.md)
+[README (1).md](https://github.com/user-attachments/files/21774273/README.1.md)
 # Dépressiomètre ESP32
 
-Ce projet open-source vise à concevoir un **dépressiomètre numérique** basé sur un microcontrôleur **ESP32-S3**, permettant de mesurer et d'afficher les pressions dépressives dans un système automobile ou industriel.
+Ce projet open-source permet de mesurer et visualiser la pression d'admission d'un moteur thermique à l'aide d'un microcontrôleur ESP32 et d'un écran TFT.
 
-## 🚀 Fonctionnalités
-
-- Affichage des pressions sur écran TFT 3.5" ILI9488
-- Lecture de 4 capteurs de pression analogiques XGZP6818A
-- Intégration d’un capteur AFR MTX-L Plus
-- Sauvegarde des données sur carte SD
-- Interface utilisateur avec 4 boutons
-- Connectivité USB-C pour alimentation et communication
-- Boîtier imprimable en 3D avec inserts filetés
-
-## 🧰 Matériel utilisé
+## 📦 Matériel utilisé
 
 Voici la liste du matériel nécessaire à la réalisation du projet :
 
-- A1
-- A2
-- A3
-- A4
-- A5
-- A6
-- A7
-- A8
-- A9
+| Numéro | Référence | Catégorie | Description | Quantité | Lien |
+|--------|-----------|-----------|-------------|----------|------|
+| A1 | ESP32-S3 | Microcontrôleur | Carte de développement Wi-Fi/Bluetooth | 1 | https://www.amazon.com/Espressif-ESP32-S3-DevKitC-1U-N8-Development-Board/dp/B0BX2MSCRT |
+| A2 | ILI9488 TFT | Affichage | Écran TFT 3.5" SPI 480x320 | 1 | https://www.amazon.com/3-5inch-display-interface-ili9488-electronic/dp/B08C7NPQZR |
+| A3 | XGZP6818A | Capteur de pression | Capteur absolu 0–700kPa analogique | 4 | https://www.digikey.com/en/products/detail/cfsensor/XGZP6818A00700KPA33/25807294 |
+| A4 | MTX-L Plus | Capteur AFR | Capteur AFR Bosch LSU 4.9 analogique | 1 | https://www.innovatemotorsports.com/mtx-l-plus-digital-wideband-air-fuel-ratio-gauge-kit-3-ft.html |
+| A5 | SD Module SPI | Stockage | Module carte SD externe SPI | 1 | https://www.amazon.com/Micro-Module-Arduino-ESP32-ESP8266/dp/B0D8HR7XCK |
+| A6 | Bouton Ø8mm | Interface utilisateur | Bouton momentané à montage panneau | 4 | https://www.amazon.com/outstanding-Button-Switch-Momentary-DS-101/dp/B07ZV3PB26 |
+| A7 | USB-C Panel Mount | Connectique | Connecteur USB-C à montage panneau | 1 | https://www.amazon.com/QIANRENON-Straight-Connector-Mounting-Extension/dp/B0CQ4VD2N2 |
+| A8 | Insert M2.5 | Fixation | Insert fileté pour plastique | 4 | https://www.amazon.com/M2-5-Brass-Knurled-Insert-Threaded/dp/B07ZKZKJZJ |
+| A9 | Connecteur AFR | Connectique | Prise pour capteur AFR analogique | 1 | https://www.amazon.com/Innovate-Motorsports-3844-Replacement-Sensor/dp/B00B4VZKZK |
 
-## 🧱 Fichiers 3D
 
-Le boîtier du dépressiomètre est modélisé en 3D et disponible aux formats suivants :
+## 🛠️ Fonctionnalités
 
+- Acquisition de données de pression via capteurs analogiques
+- Affichage en temps réel sur écran TFT
+- Enregistrement des données sur carte SD
+- Interface utilisateur avec boutons physiques
+- Connectivité USB-C pour alimentation et communication
+
+## 📐 Fichiers 3D
+
+Les fichiers du boîtier sont disponibles aux formats :
 - STL
 - STEP
 - OBJ
@@ -39,30 +39,20 @@ Le boîtier du dépressiomètre est modélisé en 3D et disponible aux formats s
 - SLDPRT
 - IPT
 
-👉 Les fichiers sont téléchargeables via les liens fournis dans le dépôt ou dans la section [Releases](https://github.com/ton-repo/releases).
+## ⚙️ Instructions de montage
 
-## 🛠️ Instructions de montage
+1. Imprimer le boîtier en 3D
+2. Insérer les composants selon le plan d’implantation
+3. Connecter les capteurs et l’écran à l’ESP32
+4. Charger le firmware sur l’ESP32
+5. Tester l’affichage et la mesure
 
-1. Imprimer le boîtier en 3D (épaisseur des parois : 3 mm)
-2. Fixer l’écran TFT sur la face avant (découpe : 76 x 57 mm)
-3. Insérer les 4 boutons Ø8 mm sous l’écran
-4. Monter les capteurs de pression sur la face supérieure (Ø6 mm)
-5. Intégrer le capteur AFR à droite
-6. Fixer la carte ESP32-S3 à l’intérieur
-7. Connecter la carte SD et le port USB-C
-8. Fermer le boîtier avec les vis M2.5 dans les inserts filetés
+## 🔌 Schéma de câblage
 
-## 📐 Schéma de câblage
+Le schéma de câblage est disponible dans le dossier `docs/`.
 
-Le câblage complet est disponible dans le fichier PDF `Plans_Boitier_Depressiometre_ESP32_Cotes_Complets (1).pdf` avec les dimensions et emplacements des composants.
+## 🔗 Liens utiles
 
-## 📎 Liens utiles
-
-- [Documentation ESP32-S3](https://www.espressif.com/en/products/socs/esp32-s3)
-- [Datasheet XGZP6818A](https://www.sensorsportal.com)
-- [TFT ILI9488 Library](https://github.com/Bodmer/TFT_eSPI)
-- [CadQuery pour modélisation paramétrique](https://cadquery.readthedocs.io)
-
----
-
-© Projet développé par Laurent. Contributions bienvenues !
+- [Documentation ESP32](https://docs.espressif.com/)
+- [Librairie TFT ILI9488](https://github.com/Bodmer/TFT_eSPI)
+- [CadQuery pour modélisation paramétrique](https://cadquery.readthedocs.io/)
